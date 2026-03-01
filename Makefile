@@ -3,14 +3,14 @@
 CXX := /usr/bin/g++
 CXXFLAGS := -Wall -Wextra -std=c++17
 TARGET := hello
-SRC := hello.cpp
+SRC := main.cpp
 
 all: $(TARGET)
 
 $(TARGET): $(SRC)
-    $(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
 clean:
-    rm -f $(TARGET)
+	rm -f $(TARGET)
 
 .PHONY: all clean
